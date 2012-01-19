@@ -1,7 +1,28 @@
 //MIU - Project
 //Jairo Daniel Bernal
 //MIU 1201
-//01/12/2012		
+//01/19/2012
+
+
+var parsePrjFrom = function (data) {
+	console.log(data);
+};
+
+$(document).ready(function() {
+
+	var prjform = $("#addProject");
+	
+	prjform.validate({
+		invalidHandler: function (form, validator) {},
+		submitHandler: function () {
+			var data = prjform.serializeArray ();
+			parsePrjFrom(data);
+		}
+	});
+
+});
+		
+/*
 
 // DOM Content Load.
 window.addEventListener("DOMContentLoaded", function(){
@@ -156,7 +177,7 @@ window.addEventListener("DOMContentLoaded", function(){
 	
 		
 	// JSON Object - Auto populate local storage
-	/*
+
 	function autoFillData() {
 		var json = {
 			"pType1": {
@@ -201,7 +222,7 @@ window.addEventListener("DOMContentLoaded", function(){
 			localStorage.setItem(id, JSON.stringify(json[n]));
 		};
 	};
-	*/
+	
 	
 	// Make Item Links
 	
@@ -385,5 +406,9 @@ window.addEventListener("DOMContentLoaded", function(){
 	clearLink.addEventListener("click", clearLocal);
 	var saveLink = $("submit");
 	saveLink.addEventListener("click", validate);
+	
+	
 
 });
+
+*/

@@ -1,11 +1,180 @@
-<!DOCtype html>
+<!doctype html>  
 
-<!--	VFW - Project 3			-->
+<!--	MIU - Project			-->
 <!--	Jairo Daniel Bernal 	-->
-<!--	VFW 1112				-->
-<!--	12/08/2011				-->
+<!--	MIU 1201				-->
+<!--	01/19/2012				-->
 
-<html> 
+<html lang="en">
+<head>		
+	<meta charset="utf-8" />
+	
+	<title>Design Track</title>
+	
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<meta http-equiv="cleartype" content="on">
+			
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+	<link rel="stylesheet" href="css/style.css" type="" />
+	
+	<script src="js/libs/modernizr.custom.min.js"></script>
+
+
+</head>
+<body>
+
+	<div data-role="page" id="addProject">			<!--Add a project page stars here-->
+		<div data-role="header" data-position="fixed"  data-add-back-btn="true">
+			<h1>Design Track</h1>
+			<!--<label for="search-basic"></label>
+			<input type="search" name="search" id="searc-basic" value="Search a Project" />-->
+		</div>
+		
+		<label for="search-basic"></label>
+		<input type="search" name="search" id="searc-basic" value="Search a Project" />
+		
+		<div data-role="content">
+			
+			<form action="" smethod="post"  id="newPrjFrom">
+				
+				<h3>New Project</h3>
+				<p>* fields required.</p>
+				
+				
+				<div data-role="fieldcontain">
+					<label for="projectType" >* Project Type:</label>
+					<select name="projectType" id="projectType" data-native-menu="false" class="required">
+						<option data-placeholder="true">-- Choose a Type --</option>
+						<option value="siteDevelopment">Site Development</option>
+						<option value="buildingEnvelope">Building Envelope</option>
+						<option value="interiorDesign">Interior Design</option>
+					</select>
+				</div>
+				
+				<div data-role="fieldcontain">
+					<label for="projectName">* Project Name:</label>
+					<input type="text" name="projectName"  id="projectName" value="" class="required"/>
+				</div>
+				
+				<div data-role="fieldcontain">
+					<label for="projectNumber">Project Number:</label>
+					<input type="number" name="projectNumber"  id="projectNumber" value="" placeholder="yynnn" class="required number"/>
+					<p>Project Number starts with the year follow by a three digit number </p>
+				</div>
+				
+				<div data-role="fieldcontain">
+					<label for="designerName">* Designer Name:</label>
+					<input type="text" name="designerName"  id="designerName" value="" class="required"/>
+				</div>
+				
+				<div data-role="fieldcontain">
+					<label for="completionDate">* Completion Date:</label>
+					<input type="date" name="completionDate"  id="completionDate" value="" placeholder="yyyy-mm-dd" class="required date"/>
+					<p>The projected date for the completion of the project</p>
+				</div>
+				
+				<h4>Tasks</h4>
+				
+				<div data-role="fieldcontain">
+					<fieldset data-role="controlgroup">
+						<legend>Drawings:</legend>
+						<input type="checkbox" value="plans" name="dwg" id="plans"/>
+						<label for="plans">Plans</label>
+						<input type="checkbox" value="elevations" name="dwg" id="elev"/>
+						<label for="elev">Elevations</label>
+						<input type="checkbox" value="sections" name="dwg" id="Sect"/>
+						<label for="Sect">Sections</label>
+					</fieldset>
+				</div>
+				
+				<div data-role="fieldcontain">
+					<label for="comments">Drawings Comments:</label>
+					<textarea></textarea>
+				</div>
+				
+				<div data-role="fieldcontain">
+					<fieldset data-role="controlgroup">
+						<legend>3D Work:</legend>
+						<input type="radio" value="digitalModel" name="trdWork" id="dModel"/>
+						<label for="dModel">Digital Model</label>
+						<input type="radio" value="physicalModel" name="trdWork" id="pModel"/>
+						<label for="pModel">Physical Model</label>
+						<input type="radio" value="animations" name="trdWork" id="anim"/>
+						<label for="anim">Animations</label>
+						<input type="radio" value="all-the-about" name="trdWork" id="all"/>
+						<label for="all">All</label>
+					</fieldset>
+				</div>
+				
+				<div data-role="fieldcontain">
+					<label for="comments">3D Work Comments:</label>
+					<textarea></textarea>
+				</div>
+				
+				<div data-role="fieldcontain">
+						<label for="renderings">Renderings:</label>
+						<select data-role="slider">
+							<option value="off">no</option>
+							<option value="on">yes</option>
+						</select>
+				
+						<p></p>
+					
+						<label for="renderings">Number of Renderings:</label>
+						<input type="range" name="rend" id="rend" value="0" min="0" max="50"/>
+				</div>
+				
+				<div data-role="fieldcontain" >
+					<input type="submit" name="submit" value="submit" data-theme="b" data-inline="true"/>
+					<input type="reset" name="reset" value="reset" data-theme="a" data-inline="true"/>
+				</div>
+								
+			</form>
+			
+			
+			
+		</div>
+		
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#" data-icon="delete">Clear Stored Data</a></li>
+					<li><a href="#" data-icon="search">Display Data</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>											<!--Add a project page ends here-->
+	
+
+
+
+
+	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+	<script type="text/javascript" src="js/libs/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<html> 
 	<head>
 		<meta charset="utf-8" />
 		<meta name="description" content="Track your design process." />
@@ -26,7 +195,7 @@
 		</nav>
 		<form method="post" action="#" id="projectForm">
 		<fieldset id= "projectFieldset">
-			<!--<legend></legend>-->
+				<legend></legend> 
 			<h2 id="newPrjTl">New Project</h2>
 			<span class="required">* fields required.</span>
 			<ul id="errors"></ul>
@@ -38,9 +207,9 @@
 					<li><label for="dateComp">Completion Date:</label><input type="date" id="dateComp" class="pInfo" placeholder="yyyy-mm-dd" /></li>
 				</ul>
 				<fieldset id="projectTasksFieldset">
-					<!--<legend></legend>-->
+					<legend></legend>
 					<h3>Tasks</h3>
-						<ul id="tasks"> <!--Tasks List	-->			
+						<ul id="tasks"> 			
 							<li>Drawings:
 								<ul class="checkbox">				
 									<li><input type="checkbox" value="Plan" id="Plan" name="drawings" /><label for="Plan">Plans</label></li>
@@ -59,13 +228,13 @@
 							</li>
 							<li><label for="wComments">3D Work Comments:</label><br /><textarea id="wComments" class="commentArea"></textarea></li>	
 							<li><label for="rend">Renderings:</label><input type="range" min="1" max="20" id="rend" /></li>
-						</ul><!--Tasks List - End-->		
+						</ul>		
 				</fieldset>
 				<input type="submit" value="Save Project" id="submit"/>
 		</form>
 		<script src="js/main.js" type="text/javascript"></script>
 	</body>
-</html>
+</html>-->
 				
 						
 					
