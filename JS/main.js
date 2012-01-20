@@ -10,7 +10,7 @@ var parsePrjFrom = function (data) {
 
 $(document).ready(function() {
 
-	var prjform = $("#addProject");
+	var prjform = $('#addProject');
 	
 	prjform.validate({
 		invalidHandler: function (form, validator) {},
