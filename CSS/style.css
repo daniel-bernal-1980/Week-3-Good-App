@@ -8,12 +8,43 @@ label.error{
 	display: block; margin: 10px; 0; color: red;
 }	
 
-#searc-basic{
-	
+
+#content{
+	background: url(../Image/BG%20graphpaper.png) no-repeat white;
+	padding-top: 60px;
+}	
+
+#contentIndex{
+	background: url(../Image/BG%20graphpaper.png) no-repeat;
+	padding-top: 60px;
+}	
+
+#feature{
+	padding-left: 10px;
+	padding-right: 5px;
 }
 
-	
-	
+#newPrjFrom{
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+#prjFrom{
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+#addProject{
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+#browse{
+	padding-right: 20px;
+	padding-left: 20px;
+	margin-top: 20px;
+	height: 400px;
+}
 	
 /*  additem.htmal  */
 	

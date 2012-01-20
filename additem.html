@@ -34,13 +34,14 @@
 		<label for="search-basic"></label>
 		<input type="search" name="search" id="searc-basic" value="Search a Project" />
 		
-		<div data-role="content">
+		<div data-role="content" id="content">
 			
 			<form action="" smethod="post"  id="newPrjFrom">
 				
 				<h3>New Project</h3>
 				<p>* fields required.</p>
 				
+				<div id="prjFrom">
 				
 				<div data-role="fieldcontain">
 					<label for="projectType" >* Project Type:</label>
@@ -90,7 +91,7 @@
 				
 				<div data-role="fieldcontain">
 					<label for="comments">Drawings Comments:</label>
-					<textarea></textarea>
+					<textarea placeholder="Add details for the requiered drawings."></textarea>
 				</div>
 				
 				<div data-role="fieldcontain">
@@ -109,7 +110,7 @@
 				
 				<div data-role="fieldcontain">
 					<label for="comments">3D Work Comments:</label>
-					<textarea></textarea>
+					<textarea placeholder="Add details for the requiered 3D work."></textarea>
 				</div>
 				
 				<div data-role="fieldcontain">
@@ -129,10 +130,10 @@
 					<input type="submit" name="submit" value="submit" data-theme="b" data-inline="true"/>
 					<input type="reset" name="reset" value="reset" data-theme="a" data-inline="true"/>
 				</div>
+				
+				</div>
 								
 			</form>
-			
-			
 			
 		</div>
 		
@@ -147,9 +148,6 @@
 		</div>
 	</div>											<!--Add a project page ends here-->
 	
-
-
-
 
 	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
